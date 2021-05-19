@@ -34,5 +34,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "json-server": "^0.16.3",
+    "qs": "^6.10.1",
+    "react-redux": "^7.2.4",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.1.0"
   }
 }
