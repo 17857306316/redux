@@ -1,7 +1,5 @@
 import axios from 'axios'
-const request = axios.create({
-    baseURL:'localhost:3000'
-})
+const request = axios.create({})
 
 request.interceptors.request.use(function (config) {
     return config;
