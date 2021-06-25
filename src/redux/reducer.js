@@ -1,24 +1,19 @@
 
 
-const initData = [
-    {
-        id: 1,
-        name: 'xxx',
-        ctime: "2002"
-    },
-]
-export default function brands(state = initData, action) {
+const initData = []
+export default function Brands(state = initData, action) {
+    console.log(state);
     switch (action.type) {
         case 'add':
-            const newArr =[...state]
+            const newArr = [...state]
             newArr.unshift(action.data)
-            console.log(newArr);
             return newArr
         case 'delete':
             return state.filter(v => v.id !== action.data)
+        case 'updata':
+            return [action.data]
         default:
             return state
     }
-
 
 }

@@ -1,6 +1,6 @@
 
 
-import { Table, Button } from 'antd'
+import { Button } from 'antd'
 export default function Page1({ store }) {
     const add = () => {
         const obj = {
@@ -9,7 +9,7 @@ export default function Page1({ store }) {
         store.store.dispatch({ type: 'add', data: obj })
     }
     return (
-        <Button onClick={add}>click</Button>
+        <Button onClick={add}>新增</Button>
 
     )
 }

@@ -1,6 +1,6 @@
 import {createStore} from 'redux'
-import brands from './reducer'
+import Brands from './reducer'
 
-let store = createStore(brands) 
+let store = createStore(Brands) 
 
 export default store

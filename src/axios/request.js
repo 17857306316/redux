@@ -8,7 +8,7 @@ request.interceptors.request.use(function (config) {
   });
 
 request.interceptors.response.use(function (response) {
-    return response;
+    return response.data;
   }, function (error) {
     return Promise.reject(error);
   });

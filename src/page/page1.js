@@ -1,22 +1,19 @@
 
+import { Button } from 'antd';
+import React, { useEffect } from "react";
+import { request } from '../axios/request';
 
-import { Button, Table } from 'antd'
-import { useState } from 'react'
-export default function Page1({ store }) {
-    let [dataList, setDataList] = useState(store.store.getState())
-    console.log(dataList);
+export default function Page3({ store }) {
 
-    const columns = [
-        {
-            id: '1',
-            dataIndex: 'id',
-        }
-    ]
-
-  
+    useEffect(() => {
+        request({ url: 'https://www.fastmock.site/mock/f786e661350436da533d11037d50598a/redux/redux01' }).then(res => {
+        store.store.dispatch({ type: 'updata', data: res })
+        })
+    }, [])
+    const add = () => {
+        store.store.dispatch({ type: 'delete', data: '1' })
+    }
     return (
-       <>
-        <Table dataSource={dataList} columns={columns} rowKey='id' />
-       </>
+        <Button onClick={add}>删除</Button>
     )
 }
