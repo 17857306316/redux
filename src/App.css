@@ -1,4 +1,26 @@
-.content-padding{
-    padding: 0px 24px;
+.content-padding {
+	padding: 0px 24px;
 }
-
+.ant-tabs-tab::after {
+	content: "|";
+	color: gray;
+	margin-left: 12px;
+	font-weight: 100;
+}
+.ant-tabs-tab:nth-last-of-type(2):after {
+	content: "";
+	color: gray;
+	margin-left: 12px;
+	font-weight: 100;
+}
+.ant-tabs-tab {
+	margin-left: 12px !important;
+}
+.ant-tabs-ink-bar {
+	background: none;
+}
+.ant-tabs-top > .ant-tabs-nav::before {
+	/* .ant-tabs-top{ */
+	/* .ant-tabs-nav::before { */
+	border-bottom: none;
+}

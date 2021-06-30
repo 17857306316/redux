@@ -1,5 +1,5 @@
 
-import { Button } from 'antd';
+import { Button, Pagination, Table } from 'antd';
 import React, { useEffect } from "react";
 import { request } from '../axios/request';
 
@@ -14,6 +14,11 @@ export default function Page3({ store }) {
         store.store.dispatch({ type: 'delete', data: '1' })
     }
     return (
+        <>
         <Button onClick={add}>删除</Button>
-    )
+        <Table></Table>
+        <Pagination></Pagination>
+
+        </>
+        )
 }

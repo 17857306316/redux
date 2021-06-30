@@ -17,6 +17,7 @@ export default function App(props) {
         <TabPane tab="Tab 1" key="1">
           {key==='1'&&<Page1 store={props} />}
         </TabPane>
+        
         <TabPane tab="Tab 2" key="2">
         {key==='2'&&<Page2 store={props} />}
 
