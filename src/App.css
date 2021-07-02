@@ -1,5 +1,6 @@
 .content-padding {
 	padding: 0px 24px;
+	
 }
 .ant-tabs-tab::after {
 	content: "|";
